@@ -1,10 +1,12 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 from transformers import pipeline
 from textblob import TextBlob
 import logging
 
 app = Flask(__name__)
 
+CORS(app)
 # Set up logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
