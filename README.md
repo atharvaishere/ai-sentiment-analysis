@@ -13,7 +13,7 @@
  ## Setup Instructions
  1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/ai-chatbot-sentiment-analysis.git
+    git clone https://github.com/atharvaishere/ai-chatbot-sentiment-analysis.git
     ```
  2. Set up the virtual environment:
     ```bash
