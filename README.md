@@ -1,327 +1,58 @@
- ## Overview
- This project is an AI-powered chatbot that engages in conversations and performs real-time sentiment analysis on user inputs. Built with Python, Flask, Hugging Face Transformers, and TextBlob, it will include a React front-end and AWS deployment in future iterations.
-
- ## Features
- - Conversational AI using Hugging Face's BlenderBot.
- - Real-time sentiment analysis with TextBlob.
- - Flask API for handling chat requests.
-
- ## Tech Stack
- - **Backend**: Python, Flask, Hugging Face Transformers, TextBlob
- - **Future**: React (front-end), AWS Elastic Beanstalk (deployment)
-
- ## Setup Instructions
- 1. Clone the repository:
-    ```bash
-    git clone https://github.com/atharvaishere/ai-chatbot-sentiment-analysis.git
-    ```
- 2. Set up the virtual environment:
-    ```bash
-    cd ai-chatbot-sentiment-analysis
-    python3 -m venv venv
-    source venv/bin/activate
-    pip install -r requirements.txt
-    ```
- 3. Run the Flask app:
-    ```bash
-    python3 app.py
-    ```
- 4. Test the API at `http://localhost:5000/chat` with a POST request (e.g., `{"message": "Hello"}`).
-
- ## Current Progress
- - Implemented Flask backend with chatbot and sentiment analysis.
- - Next steps: Add React front-end and deploy to AWS.
-
- ## Contact
- Atharva Shrivastava - [LinkedIn](https://www.linkedin.com/in/atharva-shrivastava-083970182/)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Last updated: 2026-05-06 ⇒
+# 🧠 AI-Powered Sentiment Analysis Chatbot
+
+[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg?logo=python&logoColor=white)](https://www.python.org/)
+[![Flask](https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
+[![Hugging Face](https://img.shields.io/badge/Hugging_Face-FF9D00?style=flat&logo=huggingface&logoColor=white)](https://huggingface.co/)
+[![React](https://img.shields.io/badge/React-(Upcoming)-20232A?style=flat&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+
+## 📌 Overview
+This project is an advanced AI-powered chatbot designed to engage in natural conversations while simultaneously performing real-time sentiment analysis on user inputs. Built with **Python**, **Flask**, **Hugging Face Transformers**, and **TextBlob**, this application serves as a robust backend API. Future iterations will introduce a responsive React front-end and full deployment on AWS Elastic Beanstalk.
+
+## ✨ Features
+- **Conversational AI:** Integrates Hugging Face's BlenderBot for intelligent, human-like dialogue generation.
+- **Real-Time Sentiment Analysis:** Leverages TextBlob to analyze and score the emotional tone of incoming messages.
+- **RESTful API:** Clean, well-documented Flask endpoints for seamless frontend integration.
+
+## 🛠️ Tech Stack
+- **Backend Core:** Python, Flask
+- **Machine Learning / NLP:** Hugging Face Transformers (`BlenderBot`), TextBlob
+- **Upcoming Roadmap:** React.js (Frontend), AWS Elastic Beanstalk (Cloud Deployment)
+
+## 🚀 Setup Instructions
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/atharvaishere/ai-sentiment-analysis.git
+   cd ai-sentiment-analysis
+   ```
+
+2. **Set up the virtual environment:**
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   ```
+
+3. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Run the Flask application:**
+   ```bash
+   python3 app.py
+   ```
+
+5. **Test the API:**
+   Send a `POST` request to the chat endpoint:
+   ```bash
+   curl -X POST http://localhost:5000/chat -H "Content-Type: application/json" -d '{"message": "I am having a wonderful day!"}'
+   ```
+
+## 📈 Current Progress
+- [x] Implemented Flask backend with chatbot inference.
+- [x] Integrated real-time sentiment analysis.
+- [ ] Develop interactive React frontend.
+- [ ] Deploy infrastructure to AWS.
+
+---
+*Developed by [Atharva Shrivastava](https://github.com/atharvaishere).*
